@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Shop Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>E-Shop Pro</h1>
+    <nav>
+      <button id="themeToggle" aria-label="Toggle Dark/Light Theme">🌙</button>
+      <input type="search" id="searchBar" placeholder="Search products…" />
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="sortPrice">
+        <option value="default">Sort by price</option>
+        <option value="low">Low → High</option>
+        <option value="high">High → Low</option>
+      </select>
+      <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main id="productContainer"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>

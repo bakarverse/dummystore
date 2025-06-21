@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CART</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+    <nav>
+      <a href="index.html">🏠 Continue Shopping</a>
+      <button onclick="logout()">🚪 Logout</button>
+    </nav>
+  </header>
+
+  <main id="cartContainer"></main>
+
+  <div class="cartSummary">
+    <p>Total Items: <span id="totalQty">0</span></p>
+    <p>Total Price: $<span id="totalPrice">0.00</span></p>
+  </div>
+
+  <form id="checkoutForm">
+    <h2>Checkout</h2>
+    <input type="text" name="name" placeholder="Full Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="text" name="address" placeholder="Address" required />
+    <textarea id="review" placeholder="Review (optional)"></textarea>
+    <button type="submit">Confirm →</button>
+  </form>
+
+  <div id="receipt" class="receipt hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
