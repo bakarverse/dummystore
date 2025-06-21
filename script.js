@@ -29,9 +29,6 @@ const elements = {
 
 if (document.getElementById("loginForm")) {
     const user = JSON.parse(localStorage.getItem("user"));
-    if (user) {
-      window.location.href = "shop.html"; // redirect if already logged in
-    }
   
     document.getElementById("loginForm").addEventListener("submit", function(e) {
       e.preventDefault();
